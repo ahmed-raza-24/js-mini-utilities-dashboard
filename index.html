@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JS Mini Project — Utilities Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>JS Mini Project — Utilities Dashboard</h1>
+  <div class="wrap">
+
+    <!-- 1. Sum with step-by-step -->
+    <div class="card">
+      <div class="row" style="justify-content:space-between">
+        <div>
+          <strong>Sum Calculator (step-by-step)</strong>
+          <div class="pill">forEach demo</div>
+        </div>
+        <button id="run-sum" class="small">Run</button>
+      </div>
+
+      <label>Numbers (comma separated)</label>
+      <input id="sum-input" type="text" value="1,2,3,4,5,6" />
+      <div class="out" id="sum-out">Step results will appear here...</div>
+    </div>
+
+    <!-- 2. Filter pass students -->
+    <div class="card">
+      <div class="row" style="justify-content:space-between">
+        <div><strong>Filter: Passed Students (>=40)</strong><div class="pill">filter / forEach</div></div>
+        <button id="run-pass" class="small">Run</button>
+      </div>
+
+      <label>Marks (comma separated)</label>
+      <input id="pass-input" type="text" value="100,20,60,30,70" />
+      <div class="out" id="pass-out">Passed marks will appear here...</div>
+    </div>
+
+    <!-- 3. Products total -->
+    <div class="card">
+      <div class="row" style="justify-content:space-between">
+        <div><strong>Products Total Price</strong><div class="pill">reduce</div></div>
+        <button id="run-products" class="small">Total</button>
+      </div>
+
+      <label>Product prices (comma separated)</label>
+      <input id="prod-input" type="text" value="100,250,399,150" />
+      <div class="out" id="prod-out">Total will appear here...</div>
+    </div>
+
+    <!-- 4. forEach doubling (primitive copy) -->
+    <div class="card">
+      <div class="row" style="justify-content:space-between">
+        <div><strong>forEach Demo — double values</strong><div class="pill">primitive copy</div></div>
+        <button id="run-double" class="small">Run</button>
+      </div>
+
+      <label>Array (comma separated)</label>
+      <input id="double-input" type="text" value="1,2,3,4" />
+      <div class="out" id="double-out">Doubled values will print here...</div>
+    </div>
+
+    <!-- 5. Object inspector: keys, values, key:value and count -->
+    <div class="card">
+      <div class="row" style="justify-content:space-between">
+        <div><strong>Object Inspector</strong><div class="pill">for...in / Object.keys</div></div>
+        <div style="display:flex;gap:6px">
+          <button id="show-keys" class="small">Keys</button>
+          <button id="show-vals" class="small">Values</button>
+          <button id="show-kv" class="small">Key:Value</button>
+        </div>
+      </div>
+
+      <label>Object (JSON)</label>
+      <textarea id="obj-input" rows="4">{"name":"Rahul","age":22,"city":"Mumbai","email":"rahul@example.com"}</textarea>
+      <div class="out" id="obj-out">Object output...</div>
+    </div>
+
+    <!-- 6. Store intermediate sums -->
+    <div class="card">
+      <div class="row" style="justify-content:space-between">
+        <div><strong>Store Steps</strong><div class="pill">store intermediate results</div></div>
+        <button id="run-steps" class="small">Run</button>
+      </div>
+
+      <label>Numbers (comma separated)</label>
+      <input id="steps-input" type="text" value="1,2,3,4,5,6" />
+      <div class="out" id="steps-out">Steps array will show here...</div>
+    </div>
+
+  </div>
+
+  <footer>All examples use plain JavaScript — open in browser.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
